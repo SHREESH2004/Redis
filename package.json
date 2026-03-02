@@ -3,18 +3,24 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-"scripts": {
-  "dev": "concurrently \"tsc -w\" \"nodemon dist/list.js\"",
-  "build": "tsc",
-  "start": "node dist/client.js"
-},
+  "scripts": {
+    "string": "concurrently \"tsc -w\" \"nodemon dist/client.js\"",
+    "set": "concurrently \"tsc -w\" \"nodemon dist/set.js\"",
+    "server": "concurrently \"tsc -w\" \"nodemon dist/server.js\"",
+    "build": "tsc",
+    "start": "node dist/client.js"
+  },
   "type": "module",
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "ioredis": "^5.10.0"
+    "axios": "^1.13.6",
+    "express": "^5.2.1",
+    "ioredis": "^5.10.0",
+    "server": "^1.0.42"
   },
   "devDependencies": {
+    "@types/axios": "^0.9.36",
     "@types/express": "^5.0.6",
     "@types/ioredis": "^4.28.10",
     "@types/node": "^25.3.2",
