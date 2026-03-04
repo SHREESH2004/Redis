@@ -13,6 +13,7 @@ app.get('/', async (req: Request, res: Response) => {
     await client.expire('todos', 30)
     return res.json(data);
 })
+
 app.listen(3000, () => {
     console.log("Server running in port 3000");
 })
