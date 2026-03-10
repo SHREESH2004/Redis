@@ -8,7 +8,8 @@
     "set": "concurrently \"tsc -w\" \"nodemon dist/set.js\"",
     "server": "concurrently \"tsc -w\" \"nodemon dist/server.js\"",
     "build": "tsc",
-    "start": "node dist/client.js"
+    "start": "node dist/client.js",
+    "attack": "node dist/attack.js"
   },
   "type": "module",
   "author": "",
@@ -17,7 +18,8 @@
     "axios": "^1.13.6",
     "express": "^5.2.1",
     "ioredis": "^5.10.0",
-    "server": "^1.0.42"
+    "server": "^1.0.42",
+    "shadowshield": "^1.0.3"
   },
   "devDependencies": {
     "@types/axios": "^0.9.36",
