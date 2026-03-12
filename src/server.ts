@@ -6,6 +6,7 @@ import { client } from "./string.js"
 import { shadowShield } from "shadowshield"
 
 const app = e()
+
 app.use(shadowShield({
     redisUrl:  "redis://127.0.0.1:6379",
     threshold: 0.5,
@@ -24,4 +25,3 @@ app.get('/', async (req: Request, res: Response) => {
 app.listen(3000, () => {
     console.log("Server running in port 3000")
 })
-
