@@ -8,9 +8,9 @@ import { shadowShield } from "shadowshield"
 const app = e()
 
 app.use(shadowShield({
-    redisUrl:  "redis://127.0.0.1:6379",
-    threshold: 0.5,
-    blockTTL:  3600
+    redisUrl: "redis://127.0.0.1:6379",
+    threshold: 0.6,
+    blockTTL: 3600
 }))
 
 app.get('/', async (req: Request, res: Response) => {
