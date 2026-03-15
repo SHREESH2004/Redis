@@ -19,11 +19,12 @@
     "express": "^5.2.1",
     "ioredis": "^5.10.0",
     "server": "^1.0.42",
-    "shadowshield": "^1.0.3"
+    "shadowshield": "^1.0.10"
   },
   "devDependencies": {
     "@types/axios": "^0.9.36",
     "@types/express": "^5.0.6",
+    "@types/express-session": "^1.18.2",
     "@types/ioredis": "^4.28.10",
     "@types/node": "^25.3.2",
     "concurrently": "^9.2.1",

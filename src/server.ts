@@ -1,5 +1,5 @@
-
 import e from "express"
+import session from "express-session"
 import { Request, Response } from "express"
 import axios from "axios"
 import { client } from "./string.js"
@@ -7,9 +7,17 @@ import { shadowShield } from "shadowshield"
 
 const app = e()
 
+// ADD THIS BEFORE shadowShield
+app.use(session({
+    secret: "test-secret",
+    resave: false,
+    saveUninitialized: true,
+    cookie: { secure: false, httpOnly: true, maxAge: 3600000 }
+}))
+
 app.use(shadowShield({
     redisUrl: "redis://127.0.0.1:6379",
-    threshold: 0.6,
+    threshold: 0.5,
     blockTTL: 3600
 }))
 
