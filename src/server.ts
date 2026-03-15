@@ -7,7 +7,7 @@ import { shadowShield } from "shadowshield"
 
 const app = e()
 
-// ADD THIS BEFORE shadowShield
+
 app.use(session({
     secret: "test-secret",
     resave: false,

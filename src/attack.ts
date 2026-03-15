@@ -28,7 +28,7 @@ const botAttack = async () => {
         console.log("⚠️  No session cookie — impossible travel won't trigger")
         console.log("    Add express-session to your app\n")
     }
-    for (let i = 1; i <= 100; i++) {
+    for (let i = 1; i <= 200; i++) {
         const fakeIP = fakeIPs[i % fakeIPs.length]
 
         try {
