@@ -14,7 +14,6 @@ app.use(session({
     saveUninitialized: true,
     cookie: { secure: false, httpOnly: true, maxAge: 3600000 }
 }))
-
 app.use(shadowShield({
     redisUrl: "redis://127.0.0.1:6379",
     threshold: 0.5,
